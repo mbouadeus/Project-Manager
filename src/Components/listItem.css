@@ -1,0 +1,52 @@
+.item > * {
+    border-radius: 0 !important;
+}
+
+.checkbox {
+    height: 0;
+    position: relative;
+    left: -49%;
+    top: -50%;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+    display: inline-block;
+    float: left;
+    height: 2.5em;
+}
+
+.col-1 {
+    width:30%;
+
+}
+
+.col-2 {
+    width: 60%;
+}
+
+.col-3 {
+    width:10%;
+}
+
+.star-wrapper {
+    width: 3em;
+    height: 100%;
+}
+.star {
+    width: 1.2em;
+    fill: gold;
+}
+
+.name,
+.desc {
+    margin: 0;
+    position: absolute;
+    left: 1em;
+    top: .5em;
+}
+
+.desc {
+    font-weight: normal;
+}

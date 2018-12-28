@@ -1,0 +1,39 @@
+.list,
+.buttons {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.buttons {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.buttons > *:not(.filter-button) {
+    float: right;
+}
+
+.buttons > * {
+    border: solid 3px #ffffff;
+}
+
+.filter-button {
+    float: left;
+}
+
+.edit-button {
+    margin: 0 .5em;
+}
+
+.list {
+    height: 50em;
+}
+
+.button > * {
+    display: inline-block;
+}
+
+.list-header {
+    border-top-left-radius: 5em;
+    border-top-right-radius: 2em;
+}

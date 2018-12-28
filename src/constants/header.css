@@ -1,0 +1,91 @@
+.header {
+    background-color: #0F560F;
+    padding: .5em 1em;
+    height: 4em;
+}
+
+.header > * {
+    display: inline-block;
+    border: solid 3px #ffffff;
+}
+
+.home,
+.page,
+.add {
+    float: left;
+}
+
+.logo {
+    height: 3.8em;
+    border-radius: 1em;
+    padding-left: .3em;
+    position: relative;
+}
+.logo > * {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+}
+
+.logo .icon {
+    font-size: 3em;
+    top: -.05em;
+    margin-right: .2em;
+}
+
+.logo h1 {
+    font-size: 2em;
+    bottom: .45em;
+}
+
+.picture,
+.settings,
+.search {
+    float: right;
+}
+
+.page {
+    font-size: 1.52em;
+    margin: 0 .3em;
+}
+
+.settings {
+    margin-left: .3em;
+}
+
+.search {
+    border: none;
+}
+.search > * {
+    display: inline-block;
+}
+
+.search-textfield {
+    border-radius: 0;
+    height: 2.7em;
+    width: 10.45em;
+    position: relative;
+    top: .1em;
+    border-bottom-left-radius: .4em;
+    border-top-left-radius: .4em;
+}
+
+.search-textfield:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.search-button {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border: solid 3px #ffffff;
+}
+
+.progress {
+    background-color: #2EA32E;
+    border-radius: 0;
+    height: 1em;
+    width: 100%;
+    position: absolute;
+
+}
