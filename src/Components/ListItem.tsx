@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {ListGroupItem, InputGroup} from 'react-bootstrap';
+import {ListGroupItem, InputGroup, Button} from 'react-bootstrap';
 import stars from '../reducers/star-svgs';
 import './listItem.css';
 
@@ -27,7 +27,7 @@ export default class Dashboard extends React.Component<IProps, IState> {
         }));
     }
 
-    handleTime(time) {
+    handleTime(time:any) {
         if (time < 7) {
             return time + (time === 1 ? ' day': ' days');
         } else {
@@ -60,7 +60,10 @@ export default class Dashboard extends React.Component<IProps, IState> {
                             <path fill="#ffcc00" d={this.state.isFavorite ? stars.solid : stars.regular}/>
                         </svg>
                     </InputGroup.Addon>
-                        <ListGroupItem className="col-1" ><label className="name">{this.props.title}</label></ListGroupItem>
+                        <ListGroupItem className="col-1" >
+                            <label className="name">{this.props.title}</label>
+                            <Button bsStyle="success" className="enter-button">Enter</Button>
+                        </ListGroupItem>
                         <ListGroupItem className="col-2" ><label className="desc">{this.props.desc}</label></ListGroupItem>
                         <ListGroupItem className="col-3" >{this.handleTime(this.props.time)}</ListGroupItem>
                 </InputGroup>
