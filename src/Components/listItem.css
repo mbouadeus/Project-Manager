@@ -50,3 +50,10 @@
 .desc {
     font-weight: normal;
 }
+
+.enter-button {
+    padding: .2em .6em;
+    position: absolute;
+    top: .2em;
+    right: 1em;
+}
